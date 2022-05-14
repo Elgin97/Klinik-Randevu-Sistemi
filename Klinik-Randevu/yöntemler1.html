@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "style.css"/>
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@700 & display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    
+    
+     <style>
+      #slider {
+          width: 500px;px;
+          height:306px;
+          } 
+        </style>
+
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    } 
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+  
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+
+          
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+              <img src="./fotoğraflar/logo.jpg" width="30" alt="">
+                <a href="index.html" class="navbar-brand">DentalClinic</a>
+                <div class="callapse navbar-callapse">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item dropdown nav-list">
+                            <a href="randevu.html" class="nav-link  text-uppercase">
+                               Randevu Al
+                            </a>
+                        </li>
+                      
+                      <li class="nav-item dropdown nav-list">
+                        <a href="tedaviyöntemleri.html" class="nav-link  text-uppercase">
+                           TEDAVİ YÖNTEMLERİ
+                        </a>
+                        </li class="nav-item dropdown nav-list">
+                     <liv>
+                      <div class="right">
+                      <div class="facebook"title="Facebook"></div>
+                      <div class="google"title="Google"></div>
+                      <div class="instagram"title="Instagram"></div>
+                      <div class="twitter"title="Twitter"></div>
+                     </div> 
+                  </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <center><img src="./fotoğraflar/SÜT-KANAL.png" style="width:50%"> </center>
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <center><img src="./fotoğraflar/sut-disiİ.jpg" style="width:50%"></center>
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <center><img src="./fotoğraflar/sutdis.jpg" style="width:50%"></center>
+            
+          </div>
+          
+          
+        
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+           
+          </div>
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+        </header>
+        <br>
+        <center><h3><font  color="#0D6EFD">PEDODONTİ TEDAVİ YÖNTEMLERİ</font></h3></center>
+        <br>
+        <div class="bilgi">
+       
+          <h3><font  color="#0D6EFD"> &ensp;&ensp;&ensp;&ensp; Süt Dişi Kanal Tedavisi</font></h3>
+        <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Süt dişlerinde kök pulpasında kronik veya akut enflamasyon, nekroz bulunan dişlere uygulanan tedavi şeklidir. Süt dişlerinde; kök kanallarındaki enfekte doku artıklarının çıkarılarak uygun genişletme ve dezenfeksiyonu yapılır. Sonrasında kanalların dolgu maddesi ile doldurulması işlemidir.
+
+          Çocuklarda süt dişleri; düzenli olarak beslenebilmeleri ve konuşmalarının gelişmesi bakımından çok önemlidir. Süt dişleri daimi dişlere kılavuzluk ederler. Bu yüzden bakımları ihmal edilmemelidir. Alttan gelen daimi dişlere zarar vermedikleri sürece, kendiliğinden düşünceye kadar ağızda kalmaları önemlidir. Bu süreyi uzatmak gerekiyorsa kanal tedavisi yapılabilir.<br><br> Çocuklarda kanal tedavisi oldukça önemli ve hassas bir konudur. Süt dişi tedavisinin esas amacı; süt dişlerini normal düşme zamanına kadar sağlıklı ve işlevsel olarak ağızda tutmaktır. Dişlerin destek dokularının bütünlüğünü ve sağlığını korumayı, alttaki daimi dişe zarar vermemeyi ve daimi dişin yerini korumayı, fokal enfeksiyon riskini ortadan kaldırmayı amaçlar.
+          
+          Genelde bilinen durumun aksine süt dişler de daimi dişler gibi köklü dişlerdir. Dişler ağız içinde görüldükten sonra köklerin oluşması üç sene kadar sürmektedir. Alttan gelen dişler mevcut süt dişlerinin köklerini eritir ve süt dişleri zamanı gelince kendiliğinden düşerler. Süt dişlerinin çürümeleri ya da erken kaybedilmeleri daimi dişlerin tutunmalarına imkan vermez. Süt dişlerinin zaten düşeceğini düşünerek çekilmelerinde hiçbir sakınca olmadığı düşüncesi kesinlikle yanlıştır. Süt dişlerinin düzenli bakımı sağlıklı bir ağıza sahip olunabilir.</p>
+       
+
+          <h3><font  color="#0D6EFD"> &ensp;&ensp;&ensp;&ensp;&ensp;Süt Dişi Çekimi</font></h3>
+           <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Süt dişleri, her çocukta gelişim tipi farklı olduğundan dolayı ortalama süreler içerisinde ağız içerisinde belirir ve beklenen sürelerde ağızdaki yerini almaya başladığında da endişe duyulmasına gerek kalmaz. Süt dişleri, toplamda 20 adettir. Tıpkı kalıcı dişlerde görüldüğü gibi bu süt dişleri de köpek dişleri, kesici dişler ve süt azıları şeklinde çeşitlenir.
+
+            Süt dişlerindeki kök kısımları ise daha kısadır. Ayrıca daimi dişler çıkarken, o noktadaki süt dişlerinde erime meydana geldiği için bu dişlerin çekimleri de oldukça kolay ve pratik işlemlerle gerçekleşir. Bazen hastalara yalnızca yüzeysel anestezi uygulanması ile süt dişi çekim işlemleri mümkün olmaktadır.
+            
+            Süt dişlerinin düşebilmesi için ise dişin tam alt kısmından, o bölge üzerine konumlanacak daimi dişlerin çıkması gerekir. Söz konusu daimi diş, alt kısımdan büyüme gösterdikçe süt dişi kök kısımları da erir ve neticede bu süt dişleri düşer. Eğer bu mekanizmayı bir şekilde bozabilecek olan bir durum mevcut ise o zaman süt dişi de düşmeyecek demektir. Düşmeyen süt dişi bulunması hâlinde, doktorun tedavi fikrine bağlı olarak süt dişi çekimi yapılması gerekli olabilmektedir.</p>
+
+
+
+
+       <h3><font  color="#0D6EFD"> &ensp;&ensp;&ensp;&ensp; Çocuklarda Yer Tutucular</font></h3>
+        <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Süt dişlerinin düşme zamanında önce kaybedildiği durumlarda alttan gelecek sürekli dişin yerini korumak amacıyla yapılan apareylere yer tutucu denir. Süt dişleri sürekli dişler gelene kadar ağızda çocuğa fonksiyon estetik ve fonasyon sağlamanın yanında alttan gelecek olan dişe de rehberlik eder. Çürük enfeksiyon travma ya da herhangi bir nedenle süt dişlerinin vaktinden önce kaybedildiği durumlarda eğer yer tutucu yapılmazsa ağızda gelişimsel bozukluklar ve çapraşıklıklar meydana gelir.
+          
+          
+          
+          <br><br><br>
+
+            
+</body>
+</html>
